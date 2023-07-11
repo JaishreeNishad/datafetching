@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // The fetch API.
+    // The fetch API provides a fetch() metgos defined on the window opject, which you can use to perform request.API
+
+
+    // this methos returns a promise that you can use to retrive the response of the request.
+
+
+    async function getCovidapi(){
+        const jsondata = await fetch('https://data.covid19india.org/v4/min/data.min.json');
+        
+
+        const jsdata =  await jsondata.json();
+        console.log(jsdata.AN);
+
+    }
+
+    getCovidapi();
+
+
+</script>
+</html>
